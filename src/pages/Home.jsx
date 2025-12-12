@@ -133,7 +133,7 @@ const Home = () => {
 
         <section className="section4">
             <div className='heading'>
-                <h2>News</h2>
+                <h2>Our Players</h2>
                 <span></span>
             </div>
             <Players />

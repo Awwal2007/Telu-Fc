@@ -69,6 +69,14 @@ nav .nav-bars .our-academy{
   cursor: pointer;
   border-radius: 12px;
 }
+nav .arm-burger{
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
 
 /* Hero */
 
@@ -545,8 +553,43 @@ footer .copywrite{
   section{
     padding: 40px 20px;
   }
-  nav ul li{
-    display: none;
+  header{
+    padding: 20px 20px;
+
+  }
+  nav ul{
+    flex-direction: column;
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    color: black;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.543);
+    gap: 30px !important;
+  }
+  nav ul li a{
+    color: black !important;
+    font-weight: 600;
+  }
+  nav ul a:hover{
+    background: #F58220 !important;
+    font-weight: 600;
+  }
+  .arm-burger{
+    display: block !important;
+  }
+  .closeBtn{
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .d-none{
+    display: none !important;
+  }
+  
+  header .hero{
+    height: 90vh;
   }
   .section1 .content-container{
     flex-direction: column;
@@ -565,6 +608,15 @@ footer .copywrite{
   }
   .section3 .news-container .left span{
     width: 250px;
+  }
+  .section4 .slide .player-info {
+    bottom: -12px;
+  }
+  .section4 .slide .player-info h2{
+    font-size: 1rem;
+  }
+  .section4 .slide .player-info p{
+    font-size: 1rem;
   }
   footer .footer-contents {
     flex-wrap: wrap;
