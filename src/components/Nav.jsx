@@ -21,7 +21,7 @@ const Nav = () => {
             </Link>
         </div>
         <div className="nav-bars">
-            <ul className={open ? "d-none" : ""}>
+            <ul className={open ? "" : "d-none"}>
                 <div onClick={toggleNavLinks} className='closeBtn'>
                     <GrClose/>
                 </div>
