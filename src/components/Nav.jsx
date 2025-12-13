@@ -17,7 +17,7 @@ const Nav = () => {
     <nav>
         <div className="logo">
             <Link to="/">
-                <img src={logo} alt="logo" />
+                <img loading='lazy' src={logo} alt="logo" />
             </Link>
         </div>
         <div className="nav-bars">
@@ -26,7 +26,7 @@ const Nav = () => {
                     <GrClose/>
                 </div>
                 <li><Link to="/">Home</Link></li>
-                <li> <Link to="">About</Link> </li>
+                <li> <Link to="/about">About</Link> </li>
                 <li> <Link to="">Players</Link></li>
                 <li><Link to="">Gallery</Link></li>
                 <li><Link to="">News</Link></li>

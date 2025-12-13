@@ -9,7 +9,7 @@ const Header = () => {
             <h1>Telu Football Club</h1>
             <p>Telu Football Club is a top rated professional football club, based in Osun, Nigeria which has featured in various football tournaments. It’s Registered with the Nigeria F.A and the Corporate Affairs Commission</p>
             <button>
-                Join Us
+              Join Us
             </button>
         </div>        
     </header> 

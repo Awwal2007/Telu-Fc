@@ -11,11 +11,11 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 
 
-export default function Players() {
+ const PlayersMobile = ()=> {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -76,3 +76,5 @@ export default function Players() {
     </>
   );
 }
+
+export default PlayersMobile

@@ -5,18 +5,17 @@ import section3Image from "../assets/FB_IMG_1765561023712.jpg"
 import { PiTargetBold } from "react-icons/pi";
 import { LuScanEye } from "react-icons/lu";
 import { TbCalendarTime } from "react-icons/tb";
-import { IoCallOutline } from "react-icons/io5";
-import { HiOutlineMail } from "react-icons/hi";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaInstagram } from "react-icons/fa";
-import { LuFacebook } from "react-icons/lu";
-import { SlSocialYoutube } from "react-icons/sl";
+
 
 
 import Players from '../components/Players';
-import logo from "../assets/telu logo.png"
+import Footer from '../components/Footer';
+import useMediaQuery from '../components/MediaQuery';
+import PlayersMobile from '../components/PlayersMobile';
+
 
 const Home = () => {
+    const mobile = useMediaQuery("(max-width: 768px)")
   return (
     <>
         <Header/>
@@ -29,7 +28,7 @@ const Home = () => {
 
             <div className="content-container">
                 <div className='left'>
-                    <img src={section1Image} alt="section 1 image" />
+                    <img loading='lazy' src={section1Image} alt="section 1 image" />
                 </div>
 
                 <div className='right'>
@@ -69,7 +68,7 @@ const Home = () => {
             <div className="news-container">
                 <div className='left'>
                     <div className='image-container'>
-                        <img src={section3Image} alt="" />
+                        <img  loading='lazy' src={section3Image} alt="" />
                     </div>
                     <div className='content'>
                         <div className='time'>
@@ -85,7 +84,7 @@ const Home = () => {
                 <div className='right'>
                     <div className='card'>
                         <div className='image-container'>
-                            <img src={section3Image} alt="" />
+                            <img loading='lazy' src={section3Image} alt="" />
                         </div>
                         <div>
                             <div className='time'>
@@ -99,7 +98,7 @@ const Home = () => {
 
                     <div className='card'>
                         <div className='image-container'>
-                            <img src={section3Image} alt="" />
+                            <img loading='lazy' src={section3Image} alt="" />
                         </div>
                         <div>
                             <div className='time'>
@@ -113,7 +112,7 @@ const Home = () => {
 
                     <div className='card'>
                         <div className='image-container'>
-                            <img src={section3Image} alt="" />
+                            <img loading='lazy' src={section3Image} alt="" />
                         </div>
                         <div>
                             <div className='time'>
@@ -136,7 +135,8 @@ const Home = () => {
                 <h2>Our Players</h2>
                 <span></span>
             </div>
-            <Players />
+            {mobile ? <PlayersMobile /> : <Players /> }
+            
             <div className="button-container">
                 <button>
                     View all
@@ -144,69 +144,7 @@ const Home = () => {
             </div>
         </section>
 
-        <footer>
-            <div className='footer-contents'>
-                <div className='footer-items'>
-                    <div className='logo'>
-                        <img src={logo} alt="footer logo" />
-                    </div>
-                    <div className='contacts'>
-                        <p>
-                            <IoCallOutline/>
-                            <span>09033884748</span>
-                        </p>
-                        <p>
-                            <HiOutlineMail/>
-                            <span>telufootbalclub@info.com</span>
-                        </p>
-                        <p>
-                            <IoLocationOutline/>
-                            <span>Government Quarters. Oke Afo, Iwo. Osun State. Nigeria.</span>
-                        </p>
-                    </div>
-                </div>
-                <div className='footer-links'>
-                    <p>Quick Links</p>
-                    <div className="links-container">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Players</a>
-                        <a href="">News</a>
-                        <a href="">Gallery</a>
-                    </div>
-                </div>
-                <div className='footer-links'>
-                    <p>Supports</p>
-                    <div className="links-container">
-                        <a href="">FAQs</a>
-                        <a href="">Contact Supports</a>
-                        <a href="">Terms & condition</a>
-                        <a href="">Privacy Policy</a>
-                        <a href="">Cookie Policy</a>
-                    </div>
-                </div>
-                <div className='footer-socials'>
-                    <p>Stay Updated</p>
-                    <span>
-                        Get the latest update from our social medias
-                    </span>
-                    <div className="socials">
-                        <a target='blank' href="">
-                            <FaInstagram />
-                        </a>
-                        <a target='blank' href="">
-                            <LuFacebook />
-                        </a>
-                        <a target='blank' href="">
-                            <SlSocialYoutube />
-                        </a>                        
-                    </div>
-                </div>
-            </div>
-            <div className='copywrite'>
-                <p>© Copywrite Telu Football Club Official Website</p>
-            </div>
-        </footer>
+        <Footer />
 
     </>
   )

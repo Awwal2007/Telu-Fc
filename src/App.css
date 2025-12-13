@@ -362,7 +362,7 @@ header .hero button:hover{
   align-content: center;
 }
 .section3 button:hover{
-  background: #00391d;
+  background: #003018;
 }
 
 
@@ -404,10 +404,11 @@ header .hero button:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0px;
   color: white;
-  padding: 20px;
+  padding: 10px;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
 }
 .section4 .slide .player-info h2{
   font-size: 3rem;
@@ -449,6 +450,9 @@ header .hero button:hover{
   font-weight: 550;
   cursor: pointer;
   align-content: center;
+}
+.section4 .button-container button:hover{
+  background: #003018;
 }
 
 
@@ -611,14 +615,14 @@ footer .copywrite{
     width: 250px;
   }
   .section4 .slide .player-info {
-    bottom: -12px;
+    bottom: 2px;
   }
-  .section4 .slide .player-info h2{
+  /* .section4 .slide .player-info h2{
     font-size: 1rem;
   }
   .section4 .slide .player-info p{
     font-size: 1rem;
-  }
+  } */
   footer .footer-contents {
     flex-wrap: wrap;
     row-gap: 30px;
