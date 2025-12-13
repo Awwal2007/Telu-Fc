@@ -6,7 +6,7 @@ import { IoMenu } from "react-icons/io5";
 import { GrClose } from "react-icons/gr";
 
 
-const Nav = () => {
+const Nav = ({home, about, players, gallery, news}) => {
     const [open, setOpen] = useState(false)
 
     const toggleNavLinks = ()=>{
@@ -22,14 +22,17 @@ const Nav = () => {
         </div>
         <div className="nav-bars">
             <ul className={open ? "" : "d-none"}>
-                <div onClick={toggleNavLinks} className='closeBtn'>
-                    <GrClose/>
-                </div>
-                <li><Link to="/">Home</Link></li>
-                <li> <Link to="/about">About</Link> </li>
-                <li> <Link to="">Players</Link></li>
-                <li><Link to="">Gallery</Link></li>
-                <li><Link to="">News</Link></li>
+                {open && 
+                    <div onClick={toggleNavLinks} className='closeBtn'>
+                        <GrClose/>
+                    </div>
+                }
+                
+                <li><Link className={home} to="/">Home</Link></li>
+                <li> <Link className={about} to="/about">About</Link> </li>
+                <li> <Link className={players} to="">Players</Link></li>
+                <li><Link className={gallery} to="">Gallery</Link></li>
+                <li><Link className={news} to="">News</Link></li>
                 <li><Link to="">Contact Us</Link></li>
             </ul>
             <div className="our-academy">
