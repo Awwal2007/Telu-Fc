@@ -317,7 +317,14 @@ header .hero button:hover{
   width: 100px;
 }
 
-.section3 .news-container .right{
+.section3 .news-container .two-card-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.section3 .news-container .two-card-container .right{
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -326,7 +333,7 @@ header .hero button:hover{
   width: 100%;
 }
 
-.section3 .news-container .right .card{
+.section3 .news-container .two-card-container .right .card{
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -335,19 +342,19 @@ header .hero button:hover{
   position: relative;
   cursor: pointer;
 }
-.section3 .news-container .right .card .time{
+.section3 .news-container .two-card-container .right .card .time{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
 
-.section3 .news-container .right .card .image-container{
+.section3 .news-container .two-card-container .right .card .image-container{
   width: 150px;
   height: 100px;
   position: relative;
 } 
-.section3 .news-container .right .card .image-container>div{
+.section3 .news-container .two-card-container .right .card .image-container>div{
   width: 100%;
   height: 60px;
   position: absolute;
