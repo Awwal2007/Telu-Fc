@@ -15,7 +15,7 @@ body{
 header {
   padding: 20px 60px;
   height: 100vh;
-  background:  linear-gradient(to top,  rgba(0, 0, 0, 0.489), rgba(0, 0, 0, 0.63)), url("./assets/FB_IMG_1765561012969.jpg");
+  background:  linear-gradient(to top,  rgba(0, 0, 0, 0.489), rgba(0, 0, 0, 0.63)), url("./assets/DSC_4780.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,7 +32,7 @@ nav{
   align-items: center;
 }
 nav .logo{
-  width: 80px;
+  width: 120px;
 }
 nav .logo img{
   width: 100%;
@@ -736,7 +736,7 @@ footer .copywrite{
 
 
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 986px) {
   section{
     padding: 40px 30px;
   }

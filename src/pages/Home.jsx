@@ -91,7 +91,7 @@ const Home = () => {
                         </div>            
                     </div>
 
-                    <div className='right'>
+                    <div className='right d-none'>
                         <div className='card'>
                             <div className='image-container'>
                                 <div></div>
@@ -136,8 +136,7 @@ const Home = () => {
                             </div>
                             <span></span>
                         </div>            
-                    </div>
-
+                    </div>                    
                 </div>
             </div>
             <div className='button-container'>
