@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '../components/Nav'
 
-import section1Image from "../assets/FB_IMG_1765616427100.jpg"
+import section1Image from "../assets/DSC_4794-1.jpg"
 import teluImage from "../assets/FB_IMG_1765616505990.jpg"
 
 
@@ -96,7 +96,6 @@ const About = () => {
                     </h2>    
                     <span> Oba Abdulrosheed Adewale Akanbi Telu 1</span> 
                     <p>HRM Oba Abdulrosheed Adewale Akanbi Telu 1 of Iwoland is the grand patron of our football club </p>
-                    
                 </div>
             </div>
         </section>

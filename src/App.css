@@ -279,6 +279,13 @@ header .hero button:hover{
 .section3 .news-container .left .image-container{
   width: 100%;
 }
+.section3 .news-container .left .image-container> div{
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 6px;
+  background: linear-gradient(to top,  rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.03));
+}
 .section3 .news-container .left .image-container img{
   width: 100%;
   border-top-right-radius: 16px;
@@ -337,7 +344,16 @@ header .hero button:hover{
 
 .section3 .news-container .right .card .image-container{
   width: 150px;
-  height: 90px;
+  height: 100px;
+  position: relative;
+} 
+.section3 .news-container .right .card .image-container>div{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(to top,  rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.03));
 } 
 .section3 .news-container .right .card .image-container img{
   width: 100%;
@@ -605,7 +621,7 @@ footer .copywrite{
 }
 .about .sec1 .content-container .left p{
   font-size: 16px;
-  line-height: 28px;
+  line-height: 38px;
 }
 .about .sec1 .content-container .left button{
   font-size: 13px;
@@ -642,7 +658,6 @@ footer .copywrite{
 }
 .about .sec2 .content .left:hover svg{
   color: #004924 !important;
-  transform: rotateY(20%);
 }
 
 .about .sec2 .content .left{
@@ -669,6 +684,7 @@ footer .copywrite{
 }
 .about .sec2 .content .left h3{
   font-size: 2rem;
+  transition: all .5s ease-in-out;
 }
 .about .sec2 .content .left p{
   font-size: 16px;
@@ -715,10 +731,10 @@ footer .copywrite{
 
 @media screen and (max-width: 968px) {
   section{
-    padding: 40px 20px;
+    padding: 40px 30px;
   }
   header, .about-header{
-    padding: 20px 20px;
+    padding: 20px 30px;
   }
   nav ul{
     flex-direction: column;
@@ -739,6 +755,11 @@ footer .copywrite{
   nav ul a:hover{
     background: #F58220 !important;
     font-weight: 600;
+  }
+  nav .nav-bars  ul li .active{
+    background: #F58220 !important;
+    color: black;
+    font-weight: 500;
   }
   .arm-burger{
     display: block !important;
@@ -772,6 +793,11 @@ footer .copywrite{
   .section3 .news-container .left span{
     width: 250px;
   }
+  .section3 .news-container .right{
+    flex-direction: row;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
   .section4 .slide .player-info {
     bottom: 2px;
   }
@@ -785,10 +811,31 @@ footer .copywrite{
     width: 250px;
     height: 0px;
   }
+
+  .about .sec1 .content-container{
+    flex-direction: column;
+  }
+  .about .sec3 .content{
+    flex-direction: column-reverse;
+  }
+
+
+  /* Footer */
   footer .footer-contents {
     flex-wrap: wrap;
     row-gap: 30px;
     padding: 40px 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 459px) {
+  section{
+    padding: 40px 20px;
+  }
+  header, .about-header{
+    padding: 20px 20px !important;
   }
 }
 

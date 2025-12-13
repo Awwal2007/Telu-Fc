@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import section1Image from "../assets/FB_IMG_1765561006646.jpg"
-import section3Image from "../assets/FB_IMG_1765561023712.jpg"
+import section3Image from "../assets/DSC_4802.jpg"
 import { PiTargetBold } from "react-icons/pi";
 import { LuScanEye } from "react-icons/lu";
 import { TbCalendarTime } from "react-icons/tb";
@@ -68,6 +68,7 @@ const Home = () => {
             <div className="news-container">
                 <div className='left'>
                     <div className='image-container'>
+                        <div></div>
                         <img  loading='lazy' src={section3Image} alt="" />
                     </div>
                     <div className='content'>
@@ -84,6 +85,7 @@ const Home = () => {
                 <div className='right'>
                     <div className='card'>
                         <div className='image-container'>
+                            <div></div>
                             <img loading='lazy' src={section3Image} alt="" />
                         </div>
                         <div>
