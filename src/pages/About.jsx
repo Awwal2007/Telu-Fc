@@ -2,11 +2,13 @@ import React from 'react'
 import Nav from '../components/Nav'
 
 import section1Image from "../assets/FB_IMG_1765616427100.jpg"
+import teluImage from "../assets/FB_IMG_1765616505990.jpg"
 
 
 import { GiGraduateCap } from "react-icons/gi";
 import { FaPersonRunning } from "react-icons/fa6";
 import { MdWorkHistory } from "react-icons/md";
+import Footer from '../components/Footer';
 
 const About = () => {
   return (
@@ -76,10 +78,31 @@ const About = () => {
                     <p>Our vission is to bring out the talent in you  and build players. dkfldfdkjdfjdkldfjdljdjdkj</p>
                 </div>
             </div>
-
-            
-            
         </section>
+        
+        <section className="sec3">
+            <div className='heading'>
+                <h2>Our Grand Patron</h2>
+                <span></span>
+            </div>
+
+            <div className="content">
+                <div className='patron-image'>
+                    <img src={teluImage} alt="telu image" />
+                </div>
+                <div className='patron-details'>
+                    <h2>
+                        HRM
+                    </h2>    
+                    <span> Oba Abdulrosheed Adewale Akanbi Telu 1</span> 
+                    <p>HRM Oba Abdulrosheed Adewale Akanbi Telu 1 of Iwoland is the grand patron of our football club </p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <Footer />
+
     </div>
   )
 }

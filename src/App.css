@@ -642,6 +642,7 @@ footer .copywrite{
 }
 .about .sec2 .content .left:hover svg{
   color: #004924 !important;
+  transform: rotateY(20%);
 }
 
 .about .sec2 .content .left{
@@ -650,6 +651,7 @@ footer .copywrite{
   justify-content: center;
   align-items: center;
   gap: 15px;
+  width: 100%;
 }
 .about .sec2 .content .left .icon-container{
   background:#f58320b7;
@@ -663,6 +665,7 @@ footer .copywrite{
 }
 .about .sec2 .content .left .icon-container svg{
   font-size: 4rem;
+  transition: all .5s ease-in-out;
 }
 .about .sec2 .content .left h3{
   font-size: 2rem;
@@ -674,6 +677,38 @@ footer .copywrite{
 }
 .about .sec2 .content hr{
   height: 300px;
+}
+
+.sec3 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.sec3 .content .patron-image{
+  width: 100%;
+}
+.sec3 .content .patron-image img{
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.sec3 .content .patron-details{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sec3 .content .patron-details h2{
+  color: black;
+}
+.sec3 .content .patron-details span{
+  color: #004924;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 
@@ -740,12 +775,16 @@ footer .copywrite{
   .section4 .slide .player-info {
     bottom: 2px;
   }
-  /* .section4 .slide .player-info h2{
-    font-size: 1rem;
+
+  /* About page */
+  .about .sec2 .content {
+    gap: 40px;
+    flex-wrap: wrap;
   }
-  .section4 .slide .player-info p{
-    font-size: 1rem;
-  } */
+  .about .sec2 .content hr{
+    width: 250px;
+    height: 0px;
+  }
   footer .footer-contents {
     flex-wrap: wrap;
     row-gap: 30px;
